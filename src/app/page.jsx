@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import Testimonials from "@/sections/testimonials";
 import Details from "@/sections/details";
 import Hero from "@/sections/hero";
+import Service from "@/sections/services";
 import FAQ from "@/sections/faq";
 import Header from "@/components/header";
 import { useModal } from '@/context/modalContext'
@@ -16,6 +17,7 @@ import { AnimatePresence } from "framer-motion";
 import { ContactForm } from "@/components/contact-form";
 
 const CTA = dynamic(() => import('@/sections/cta'), { ssr: false });
+
 
 export default function Home() {
 
@@ -40,6 +42,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Details />
+    <Service/>
       <Testimonials />
       <FAQ />
       <CTA />
