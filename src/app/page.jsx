@@ -39,7 +39,7 @@ export default function Home() {
 
   return (
     <main className="relative">
-      <Header />
+{/*       <Header />
       <Hero />
       <Details />
     <Service/>
@@ -50,7 +50,7 @@ export default function Home() {
         {isModalOpen && (
           <ContactForm />
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </main>
   );
 }
