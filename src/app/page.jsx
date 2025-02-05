@@ -44,7 +44,7 @@ export default function Home() {
       <Hero />
       <Details />
     <Service/>
-@@ -50,7 +50,7 @@ export default function Home() {
+ export default function Home() {
         {isModalOpen && (
           <ContactForm />
         )}
