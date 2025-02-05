@@ -39,12 +39,14 @@ export default function Home() {
 
   return (
    
-   <main className="relative">
+     <main className="relative">
       <Header />
       <Hero />
       <Details />
-    <Service/>
- export default function Home() {
+      <Testimonials />
+      <FAQ />
+      <CTA />
+      <AnimatePresence>
         {isModalOpen && (
           <ContactForm />
         )}
