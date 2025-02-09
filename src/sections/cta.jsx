@@ -88,7 +88,7 @@ const CTA = () => {
                     
                     </div>
                 </motion.div>
-                     <p className="text-sm bg-gray-900 text-white text-center py-4">
+                     <p className="text-sm bg-gray-900 text-white text-center py-10">
         © 2024 All rights reserved. Designed & Made by{" "}
         <a
           href="https://anish-10.vercel.app"
