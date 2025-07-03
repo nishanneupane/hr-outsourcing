@@ -43,6 +43,8 @@ export default function Home() {
       <Header />
       <Hero />
       <Details />
+       <Service />
+       
       <Testimonials />
       <FAQ />
       <CTA />
