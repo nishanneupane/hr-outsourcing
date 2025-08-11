@@ -17,6 +17,7 @@ export const services = () => {
         'Client Relationship Management',
         'Application Status Tracking'
       ],
+      link: "/message-broker",
       delay: 100,
     },
     {
@@ -34,6 +35,7 @@ export const services = () => {
         'Expense Tracking',
         'Tax Preparation and Filing'
       ],
+      link: "/accounting",
       delay: 200,
     },
     {
@@ -51,6 +53,7 @@ export const services = () => {
         'Meeting and Event Planning',
         'CRM and Database Updates'
       ],
+      link: "/administrative",
       delay: 300,
     },
     {
@@ -68,6 +71,7 @@ export const services = () => {
         'Influencer Collaboration',
         'Website Traffic Growth Strategies'
       ],
+      link: "/digital-marketing",
       delay: 0,
     },
     {
@@ -85,6 +89,7 @@ export const services = () => {
         'Website Security Implementation',
         'Content Management System Support'
       ],
+      link: "/web-development",
       delay: 0,
     },
     {
@@ -102,9 +107,10 @@ export const services = () => {
         'Digital Asset Optimization',
         'Training and Onboarding for IT Tools'
       ],
+      link: "/it-support",
       delay: 0,
     }
-    
+
   ];
 
   return (
@@ -142,10 +148,16 @@ export const services = () => {
               ))}
             </ul>
             <div className="flex justify-center pb-8">
-              <button className="bg-blue-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition duration-500 ease-in-out transform hover:bg-blue-600 hover:-translate-y-1 hover:scale-110 hover:shadow-xl">
-              Read More
-              </button>
+              <a
+                href={service.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-900 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition duration-500 ease-in-out transform hover:bg-blue-600 hover:-translate-y-1 hover:scale-110 hover:shadow-xl"
+              >
+                Read More
+              </a>
             </div>
+
           </div>
         ))}
       </div>

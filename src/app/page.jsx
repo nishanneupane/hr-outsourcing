@@ -38,13 +38,12 @@ export default function Home() {
   }, []);
 
   return (
-   
-     <main className="relative">
-      <Header />
+
+    <main className="relative">
       <Hero />
       <Details />
-       <Service />
-       
+      <Service />
+
       <Testimonials />
       <FAQ />
       <CTA />
@@ -54,6 +53,6 @@ export default function Home() {
         )}
       </AnimatePresence>
     </main>
-    
+
   );
 }
