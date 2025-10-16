@@ -45,7 +45,7 @@ const Footer = () => {
                 </div>
             </div>
             <p className="text-sm text-neutral-500 text-center pb-2">
-                © {new Date().getFullYear()} Your Company. All rights reserved.
+                © {new Date().getFullYear()} Expert HR Outsourcing. All rights reserved.
             </p>
 
 

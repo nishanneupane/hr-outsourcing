@@ -85,10 +85,10 @@ const CTA = () => {
                                 Contact Us
                             </span>
                         </button>
-                    
+
                     </div>
                 </motion.div>
-                     <p className="text-sm bg-gray-900 text-white text-center py-10">
+                {/* <p className="text-sm bg-gray-900 text-white text-center py-10">
         © 2024 All rights reserved. Designed & Made by{" "}
         <a
           href="https://anish-10.vercel.app"
@@ -98,7 +98,7 @@ const CTA = () => {
         >
           Anish Mainali
         </a>
-      </p>
+      </p> */}
             </div>
 
         </section>

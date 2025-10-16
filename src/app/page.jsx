@@ -15,6 +15,7 @@ import Header from "@/components/header";
 import { useModal } from '@/context/modalContext'
 import { AnimatePresence } from "framer-motion";
 import { ContactForm } from "@/components/contact-form";
+import StatsSection from '@/sections/stats-section';
 
 const CTA = dynamic(() => import('@/sections/cta'), { ssr: false });
 
@@ -42,6 +43,7 @@ export default function Home() {
     <main className="relative">
       <Hero />
       <Details />
+      <StatsSection />
       <Service />
 
       <Testimonials />
