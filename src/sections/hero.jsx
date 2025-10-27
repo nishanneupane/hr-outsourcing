@@ -4,8 +4,20 @@ import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 import ShimmerButton from "@/components/ui/shimmer-button";
 import BlurFade from "@/components/ui/blur-fade";
 import { cn } from "@/lib/utils";
+import { useModal } from "@/context/modalContext";
+import { useState } from "react";
+import { Loader } from "lucide-react";
 
 const Hero = () => {
+    const { setIsModalOpen } = useModal();
+    const [handling, setHandling] = useState(false);
+    const handleConnectClick = () => {
+        setHandling(true);
+        setTimeout(() => {
+            setIsModalOpen(true);
+            setHandling(false);
+        }, 750);
+    };
     return (
         <section id="hero" className="relative min-h-screen grid place-items-center overflow-hidden hero">
             <BlurFade yOffset='0'>
@@ -35,10 +47,34 @@ const Hero = () => {
                             background="white"
                             shimmerColor="#3eb3f7"
                             shimmerSize=".24rem"
-                            className="z-10 text-[#197eb8] py-3 px-6 md:py-4 md:px-8 font-semibold text-lg md:text-xl rounded-xl backdrop-blur-sm hover:-translate-y-1 hover:scale-105 transition-transform duration-300 active:scale-95 shadow-lg"
+                            onClick={handleConnectClick}
+                            className={cn(
+                                "relative flex items-center justify-center overflow-hidden z-10",
+                                "text-[#197eb8] py-3 px-6 md:py-4 md:px-8 font-semibold text-lg md:text-xl rounded-xl backdrop-blur-sm",
+                                "hover:-translate-y-1 hover:scale-105 transition-transform duration-300 active:scale-95 shadow-lg group"
+                            )}
                         >
-                            Get Started Today
+                            {handling && (
+                                <Loader className="animate-spin absolute" size={22} />
+                            )}
+
+                            <span
+                                className={`block relative group-hover:-translate-y-12 ${handling ? "invisible" : ""
+                                    }`}
+                                style={{ transition: "transform 0.5s" }}
+                            >
+                                Get Started Today
+                            </span>
+
+                            <span
+                                className={`absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-12 group-hover:translate-y-[-50%] ${handling ? "invisible" : ""
+                                    }`}
+                                style={{ transition: "transform 0.5s" }}
+                            >
+                                Get Started Today
+                            </span>
                         </ShimmerButton>
+
                     </BlurFade>
 
                     <AnimatedGridPattern
