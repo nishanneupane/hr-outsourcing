@@ -59,9 +59,7 @@ const Footer = () => {
                     <h4 className="font-semibold mb-3 text-neutral-900">Company</h4>
                     <ul className="flex flex-col gap-2 text-sm text-neutral-600">
                         <li><FooterLink name="About Us" link="/#about" /></li>
-                        <li><FooterLink name="Leadership Team" link="/#team" /></li>
-                        <li><FooterLink name="News & Press" link="/#news" /></li>
-                        <li><FooterLink name="Careers" link="/#careers" /></li>
+
                     </ul>
                 </div>
 
