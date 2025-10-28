@@ -103,6 +103,8 @@ const Header = () => {
 
             {/* Fullscreen navbar */}
             <div className="sm:flex hidden gap-4 items-center justify-center">
+                <Navlink name="Home" link="/#" />
+
                 {/* Who We Are dropdown: replace the old broken one with this */}
                 <div
                     className="relative"
