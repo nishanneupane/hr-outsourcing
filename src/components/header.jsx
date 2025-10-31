@@ -143,7 +143,7 @@ const Header = () => {
                                 className="px-4 py-2 text-sm text-neutral-700 hover:bg-primary/10 hover:text-primary transition-colors"
                                 onClick={() => { /* close quickly on click for UX */ setDropdownOpen(false); }}
                             >
-                                About
+                                About us
                             </a>
                             <a
                                 href="/our-purpose"
